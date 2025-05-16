@@ -215,7 +215,7 @@ export default function(eleventyConfig) {
   });
 
   // Copy folders or static assets e.g. images to site output
-  eleventyConfig.addPassthroughCopy({"assets/icons/favicon.svg" : "/favicon.svg"});
+  eleventyConfig.addPassthroughCopy("assets");
 
   // Disable 11ty dev server live reload when using CMS locally
   eleventyConfig.setServerOptions({
@@ -224,7 +224,7 @@ export default function(eleventyConfig) {
 
   return {
     templateFormats: ["md", "njk", "liquid"],
-    pathPrefix: "/",
+    pathPrefix: "/Soli-Deo/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
@@ -232,7 +232,7 @@ export default function(eleventyConfig) {
       input: ".",
       includes: "_includes",
       data: "_data",
-      output: "_site"
+      output: "docs"
     }
   };
 };
