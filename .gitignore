@@ -4,3 +4,27 @@ package-lock.json
 .cache/
 .env
 .netlify/
+
+# Node modules
+node_modules/
+
+# Eleventy output
+_site/
+
+# Eleventy cache
+.cache/
+
+# Environment files
+.env
+
+# Netlify settings (if any)
+.netlify/
+
+# macOS system files
+.DS_Store
+
+# Lockfile (optional to ignore, but recommended to commit)
+# package-lock.json
+
+# VS Code settings
+.vscode/
