@@ -2,7 +2,7 @@
 # Site metadata
 metadata:
   # site_url should match your full production URL
-  site_url: 'https://jamirou.github.io/photos/'
+  site_url: ''
   site_title: Jamiro Soli Deo • Arts.
   # site subtitles are optional
   site_subtitle_1: Porque de Ti es el arte y la vida. 
@@ -15,9 +15,9 @@ metadata:
   # footer social link (the social title is defined in the i18n section)
   site_social_url: 'https://www.instagram.com/jami.ros/'
   # SVG image used for sharing/bookmark icons
-  site_icon_svg: ''
+  site_icon_svg: /assets/uploads/favicon.svg  # Puedes cambiar este favicon más adelante.
   # optional PNG image used for sharing/bookmark icons
-  site_icon_png: /assets/uploads/favicon_io/android-chrome-192x192.png
+  site_icon_png: ''
   # add a GA4 ID to enable Google Analytics e.g. G-123456789
   site_ga4_id: ''
   # home page SEO fields
@@ -39,7 +39,6 @@ theme:
     link: '#542BFF'
     title: '#1a1a1a'  # Más oscuro para destacar mejor
     # dark mode colors
-    
     background_dark: '#101010'
     text_dark: '#E1E1E1'
     link_dark: '#FFFFFF'
@@ -55,8 +54,6 @@ theme:
     line_height_scale: 100
     # underline links
     link_underline: true
-    # Aumenta el tamaño del título
-    title_font_scale: 140  # Aumenta el tamaño del título
   theme_features:
     # enables the dark mode toggle and detects the user's dark mode preference
     enable_dark_mode: true

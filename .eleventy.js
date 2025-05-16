@@ -217,24 +217,22 @@ export default function(eleventyConfig) {
   // Copy folders or static assets e.g. images to site output
   eleventyConfig.addPassthroughCopy({"assets/icons/favicon.svg" : "/favicon.svg"});
 
-  eleventyConfig.addPassthroughCopy({ "assets/uploads": "assets/uploads" });
-
   // Disable 11ty dev server live reload when using CMS locally
   eleventyConfig.setServerOptions({
     liveReload: false
   });
 
   return {
-  templateFormats: ["md", "njk", "liquid"],
-  pathPrefix: "/gallery/",  // Asegúrate de que sea EXACTAMENTE este
-  markdownTemplateEngine: "njk",
-  htmlTemplateEngine: "njk",
-  dataTemplateEngine: "njk",
-  dir: {
-    input: ".",
-    includes: "_includes",
-    data: "_data",
-    output: "_site"
-  }
-};
+    templateFormats: ["md", "njk", "liquid"],
+    pathPrefix: "/",
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
+    dir: {
+      input: ".",
+      includes: "_includes",
+      data: "_data",
+      output: "_site"
+    }
+  };
 };

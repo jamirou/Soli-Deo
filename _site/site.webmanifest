@@ -1,0 +1,22 @@
+{
+    "name": "Jamiro Soli Deo • Arts. - Porque de Ti es el arte y la vida.",
+    "short_name": "Jamiro Soli Deo • Arts.",
+    "start_url": "",
+    "icons": [
+        {
+            "src": "/favicon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "#101010",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
