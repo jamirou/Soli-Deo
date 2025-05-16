@@ -26,8 +26,8 @@ export default function(eleventyConfig) {
         let metadata = await Image(src, {
             widths: [48,192,512],
             formats: ["png"],
-      urlPath: "/Soli-Deo/",
-      outputDir: "./docs/",
+      urlPath: "/",
+      outputDir: "./_site/",
       filenameFormat: function (id, src, width, format, options) {
             const name = "favicon";
         return `${name}-${width}.${format}`;
@@ -67,8 +67,8 @@ export default function(eleventyConfig) {
       sharpWebpOptions: { quality: outputQualityWebp },
       sharpAvifOptions: { quality: outputQualityAvif },
       formats: outputFormats,
-      urlPath: "/Soli-Deo/assets/images/",
-      outputDir: "./docs/assets/images/",
+      urlPath: "/assets/images/",
+      outputDir: "./_site/assets/images/",
       // cacheOptions: {
       //   // If image is a remote URL, this is the amount of time before 11ty fetches a fresh copy
       //   duration: "5y",
