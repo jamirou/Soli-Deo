@@ -225,16 +225,16 @@ export default function(eleventyConfig) {
   });
 
   return {
-    templateFormats: ["md", "njk", "liquid"],
-    pathPrefix: "/",
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
-    dir: {
-      input: ".",
-      includes: "_includes",
-      data: "_data",
-      output: "_site"
-    }
-  };
+  templateFormats: ["md", "njk", "liquid"],
+  pathPrefix: "/gallery/",  // Asegúrate de que sea EXACTAMENTE este
+  markdownTemplateEngine: "njk",
+  htmlTemplateEngine: "njk",
+  dataTemplateEngine: "njk",
+  dir: {
+    input: ".",
+    includes: "_includes",
+    data: "_data",
+    output: "_site"
+  }
+};
 };
